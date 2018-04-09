@@ -4,6 +4,7 @@
 <i> Refer to this link for further clarification</i><br>
 http://www.fredosaurus.com/notes-java/data/variables/40variables.html<br>
 https://www.tutorialspoint.com/java/java_variable_types.htm<br>
+https://www.youtube.com/watch?v=si9qdX76iMw
 ### Scopes
 <b> a) Local Scopes</b> (block scope and method scope)--> <i>in if block , while block </i> 
 -->if a variable is declared in a block it can be redeclared in another block , cause it is a local variable.
