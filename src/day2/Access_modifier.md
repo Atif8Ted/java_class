@@ -75,7 +75,21 @@ public static void main(String[] arguments) {
 #### Example
 
 <b>The following parent class uses protected access control, to allow its child class override openSpeaker() method −</b>
+```java
+class AudioPlayer {
+   protected boolean openSpeaker(Speaker sp) {
+      // implementation details
+   }
+}
 
+class StreamingAudioPlayer {
+   boolean openSpeaker(Speaker sp) {
+      // implementation details
+   }
+}
+```
+* Here, if we define openSpeaker() method as private, then it would not be accessible from any other class other than AudioPlayer. 
+* If we define it as public, then it would become accessible to all the outside world. But our intention is to expose this method to its subclass only, that’s why we have used protected modifier.
 
 
 
