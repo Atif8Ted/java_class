@@ -1,0 +1,20 @@
+output1=new ArrayList<String>();
+		Date date1;
+		Date date2 = new Date();
+		int age;
+		String str;
+		SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy");
+		Iterator<String> it = input1.keySet().iterator();
+		while(it.hasNext()){
+			try{
+				str = it.next();
+				date1 = format.parse(input1.get(str));
+				age = (int) ((date2.getTime()-date1.getTime())/1000/60/60/24/365);
+				if(age>=18){
+					output1.add(str);
+				}
+			}
+			catch(Exception ex){
+				System.out.println("Error");
+			}
+		}

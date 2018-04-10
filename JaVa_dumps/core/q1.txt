@@ -1,0 +1,25 @@
+public static void modifyNumber(int input1){
+		int newnumber=0;
+		int prem, rem;
+		int result=0;
+		
+		newnumber = input1%10;
+		prem = input1%10;
+		input1= input1/10;
+		
+		while(input1 > 0){
+			rem = input1%10;
+			newnumber = newnumber*10+ Math.abs(prem-rem);
+			input1 = input1/10;
+			prem =rem;
+		}
+		
+		while(newnumber > 0){
+			result = result*10 + newnumber%10;
+			newnumber = newnumber/10;
+		}
+		
+		output1 = result;
+		
+	}
+	

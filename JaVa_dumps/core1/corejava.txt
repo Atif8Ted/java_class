@@ -1,0 +1,100 @@
+What are the rules of method overriden?
+OOPS
+1)The new method definition must have the same method signature (i.e., method name and parameters)
+and the same return type.
+2)Whether parameters in the overriding method should be final is at the discretion of the subclass .
+A method's signature does not encompass the final modifier of parameters, only their types and order.
+3)The new method definition cannot narrow the accessibility of the method, but it can widen it .
+4)The new method definition can only specify all or none, or a subset of the exception classes
+(including their subclasses) specified in the throws clause of the overridden method in the superclass.
+
+
+What is a reference?
+OOPS
+A reference is a variable, so it can be reassigned to other objects, (unless the
+reference is declared final).
+A reference variable can refer to any object of the same type as the declared
+reference, or—this is the big one—it can refer to any subtype of the
+declared type.
+
+When java object is considered as polymorphic?
+OOPS
+Any Java object that can pass more than one IS-A test can be
+considered polymorphic. Other than objects of type Object, all Java objects are
+polymorphic in that they pass the IS-A test for their own type and for class Object.
+
+Can the abstract class be final?
+OOPS
+No, the main purpose of the creating abstract class is to inherit them and override there methods. If it is made final then the main purpose of the creating the abstract class is violated. i.e we can't inherit those classes. class cannot  be abstract or final but it cannot be both.
+
+What is the abstraction?
+OOPS
+Abstraction means "giving the relevant details", just opposite to the encapsulation that is hiding the irrelevant details, 
+Abstraction is the mechanism of exposing only essential features by hiding the implementation details.
+
+What are the access modifiers allowed for top level classes?
+OOPS
+Public abstract and final.
+
+What is the difference between a static and a non-static inner class?
+OOPS
+A non-static inner class may have object instances that are associated with instances of the class's outer class. A static inner class does not have any object instances
+
+What is immutable class?
+OOPS
+The class whose contents can’t be changed.
+
+What is difference between abstract class and interface?
+OOPS
+In future If you need to change your design, make it an interface. However, you may have abstract classes that provide some default behavior.
+
+In abstract class some methods may contain definition, but in interface every method should be abstract.
+
+Why Java is not fully object oriented programming language?
+OOPS
+It does not support multiple inheritances. Although we can achieve this by interfaces.
+
+What restrictions are placed on method overriding?
+OOPS
+1.    The new method definition must have the same method signature (i.e., method name and parameters) and the same return type.
+2.    Whether parameters in the overriding method should be final is at the discretion of the subclass .methods signature does not encompass the final modifier of parameters, only their types and order.
+3.    The new method definition cannot narrow the accessibility of the method, but it can widen it .
+4.    The new method definition can only specify all or none, or a subset of the exception classes (including their subclasses) specified in the throws clause of the overridden method in the superclass
+
+What is final method?
+OOPS
+Final method is a method, which cannot be overridden in the sub classes.
+
+What is the difference between instanceof and isInstance?
+OOPS
+public class JavaPlsql {
+ 
+public static void main(String[] args) {
+A objA = new A();
+B objB = new B();
+if (objA instanceof B) {// this condition will avoid classcastexception
+objB = (B) objA;
+}
+boolean status = objB.getClass().isInstance(objA);
+System.out.println("JavaPlsql.main() status " + status);
+}
+}
+ 
+class A {
+}
+ 
+class B extends A {
+}
+
+What are major concepts in oops?
+OOPS
+Abstraction, polymorphism, encapsulation and  inheritance.
+
+ 	What are major concepts in oops?
+OOPS
+Abstraction, polymorphism, encapsulation and  inheritance.
+
+Can Abstract Class have constructors? Can interfaces have constructors?
+OOPS
+Abstract class’s can have a constructor, but you cannot access it through the object, since you cannot instantiate abstract class. To access the constructor create a sub class and extend the abstract class which is having the constructor.
+

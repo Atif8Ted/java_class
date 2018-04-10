@@ -1,0 +1,16 @@
+output1=new ArrayList<String>();
+		String s;
+		int sum=0;
+		Iterator<String> it =input1.keySet().iterator();
+		while(it.hasNext()){
+			s=it.next();
+			sum=sum+input1.get(s);
+		}
+		it = input1.keySet().iterator();
+		float avg = sum/input1.size();
+		while(it.hasNext()){
+			s=it.next();
+			if(avg<input1.get(s)){
+				output1.add(s);
+			}
+		}

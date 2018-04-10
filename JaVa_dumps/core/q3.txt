@@ -1,0 +1,10 @@
+String result = null;
+		for(String str: input1){
+			StringTokenizer tokens = new StringTokenizer(str,"_");
+			String state = tokens.nextToken();
+			String capital = tokens.nextToken();
+			if(state.equalsIgnoreCase(input2))
+				{result = capital;
+				output1 = result;
+				}
+		}
