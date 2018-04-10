@@ -66,6 +66,37 @@ public class MultiDimArray {
 		
 		
 	}
+	 
+	 void ScalarMatrix(){
+		 int p = 0, q = 0, x = arr[0][0]; // 'x' is storing the 1st main diagonal element
+         
+	        for(int i=0;i<arr.length;i++)
+	        {
+	            for(int j=0;j<arr[0].length;j++)
+	            {
+	                /* Checking that the matrix is diagonal or not */
+	                if(i!=j && arr[i][j]!=0) // All non-diagonal elements must be zero
+	                {
+	                    p=1;
+	                    break;
+	                }
+	                /* Checking the matrix for scalarity */
+	                // All main diagonal elements must be equal to 'x' and non-zero
+	                if(i==j && (arr[i][j]==0 || arr[i][j]!=x)) 
+	                {
+	                    q=1;
+	                    break;
+	                }
+	            }
+	        }
+	         
+	        if(p==0 && q==0)
+	            System.out.println("The matrix is scalar");
+	        else
+	            System.out.println("The matrix is not scalar");
+	    }
+	
+	 }
 	
 	
-}
+
