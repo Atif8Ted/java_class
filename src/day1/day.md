@@ -9,7 +9,7 @@ total characters in name.
 
 ## Notes:
 ### to close scanner -> x.close();
-### to get array of l ength --> string.length; 
+### to get array of length --> string.length; 
 #### to print particular index character in a string --> string.charAt(0) or name.charAt(1);
 
 ## q3) -> Addition in more modular form ( FIles--> Addition.java & main class( MainForAdditon.java)
@@ -37,13 +37,13 @@ Also write test cases for this using Junit
 --> Color of the day
 -->Stone of the day.
 Display without using control structure
-## q8)WAP to open a image and convet it into black and white. 
+## q8)WAP to open a image and convert it into black and white. 
 ### To be done by tomorrow 
 
 ## Learn Junit --> for test cases.
-## q8)A clas has got two number , starting range and ending range 
+## q8)A class has got two number , starting range and ending range 
 --> Between start and end range ,how many <b> i) Prime ii) Even iii) ArmsStrong </b>
---> Check for validation of strting and ending point. 
+--> Check for validation of starting and ending point. 
 
 # Day Ends Here
 
