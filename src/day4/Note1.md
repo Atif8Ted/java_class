@@ -3,7 +3,10 @@
 * Q1. What is constructor . What is the purpose ?
 >> Ams:
 * Q2. What is destructor . And it,s purpose ?
->> Ams:
+>> Ams: Destructor are method which will be executed when object will go for garbage collection.<br>
+There can be multiple constructor but there can be only one destructor .
+
+
 * Q3. What is garbage collection ?.
 >> Ans: Removing the object is deallocating from the memory .It is done manually in c using free() . In java manual thing is not required . It is done automatically in java using garbage collector.<br>
 Java collector is a daemon thread
@@ -13,3 +16,6 @@ Java collector is a daemon thread
 Example ob=new Examle()
 ob=null;
 here ob is set to null and it is not referred by any other variable , so it will be garbage collected.
+
+* Q5 . What is dispose technique ?
+>> Ans :
