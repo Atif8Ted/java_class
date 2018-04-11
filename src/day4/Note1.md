@@ -21,14 +21,49 @@ here ob is set to null and it is not referred by any other variable , so it will
 >> Ans :
 
 
-Access M
+Access Modifier
 
-						public				Protected			Default		Private
-			
-	class					Yes						No				Yes				No
+|						public				Protected			Default		Private
+|_________________________________________________________________________________________			
+|	class				|	Yes						No				Yes				No
+|						|
+|	Inner Class			|	Yes						Yes				Yes				Yes
+|	Method				|	Yes						Yes				Yes				Yes
+|						|
+|	Instance			|
+|	Variable			|	Yes						Yes				Yes				Yes
+|						|
+|	Class 				|
+|	Variable			|	Yes						Yes				Yes				Yes	
+|	
+|	Local 				|
+|	Variable			|	No 						No				No				No	
+|	
+|	Interface			|	Yes						No				Yes				No
+|	
+|	Abstract			|
+|	Class					Yes						No				Yes				No	
+|	Constructor 			Yes						Check			Yes				Yes
+|	
+|	Destructor			Yes						No				No				No
 	
-	Inner Class			Yes						Yes				Yes				Yes
-	Method					Yes						Yes				Yes				Yes
-	Instance
-	Variable				Yes						Yes				Yes				Yes
-				
+	
+	Access table:
+	
+							public				Protected			Default		Private
+	
+	Within class			Yes					Yes					Yes				Yes
+	
+	Outside 				Yes					Yes					Yes				No
+	the class
+	within same
+	package	
+
+	Outside the 			Yes					No					No				No
+	package
+	
+	Outside the			Yes					Yes					No				No
+	package 
+	after
+	inheritanc
+	
