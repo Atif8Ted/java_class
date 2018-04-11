@@ -19,3 +19,16 @@ here ob is set to null and it is not referred by any other variable , so it will
 
 * Q5 . What is dispose technique ?
 >> Ans :
+
+
+Access M
+
+						public				Protected			Default		Private
+			
+	class					Yes						No				Yes				No
+	
+	Inner Class			Yes						Yes				Yes				Yes
+	Method					Yes						Yes				Yes				Yes
+	Instance
+	Variable				Yes						Yes				Yes				Yes
+				
