@@ -1,0 +1,94 @@
+ 
+Dovetail Questions
+ 
+Imp questions in JSP and Servlets
+ 
+1.       Syntax of <c:url>
+2.       Where library descriptor file stored?
+a.       META-INF/tlds
+b.      META-INF/
+c.       WEB-INF/    
+d.      WEB-INF/tlds 
+3.       True or false ${8/0}=infinity    —Ans:true
+4.       <pre:tag1>
+<%=name%>
+                </pre:tag1>
+a.       jsp
+b.      Tagdependant
+c.       Empty
+d.      Scriptless
+5.       Your servlet class extends…….
+a.       HttpServlet
+b.      Servlet
+c.       GenericServlet
+6.       Which implicit object is used unique identifier user….
+a.       Request
+b.      Response
+c.       Application
+d.      Session
+7.       How you can set session timeout for 2 minutes??
+Answer:
+a.       <session-timeout>120</session-timeout>
+b.      Session.setMaxInactiveSession(120);
+8.       Which listener is used when session is created??
+Answer:HttpSessionListner
+9.       Which listener attribute is used for listerner tag??
+Answer: <listener-class>
+10.   Which used for print el ${var}
+Answer : <c:url value=” “>
+11.   Choose the right
+Answer : a. <jsp:include page=””>
+                  b. <%@ include file=”” %>
+       
+ 
+12.   <jsp:setproperty> syntax     
+13.   Jsp lifecycle…
+14.   Translation and compilation is done at..
+a.       Execution
+b.      Deployment
+c.       Undeployment
+d.      None of the above
+15.   Which is used when cookies not used in session management?
+Answer: url rewriting not cookies
+16.   Which is used to extract the values of request parameter address?
+Answer: ${param.address}
+17.   Feature not contined in container
+a.       Servlet life manager
+b.      Session management
+c.       Application controller
+d.      Multithreading support
+18.   Question on synchronization
+19.   One program of session to display output
+20.   . You have created a web application that you license to real estate brokers.The webapp is highly customizable including the email address of the broker, which is placed on the footer of each page. This is configured as a context parameter in the deployment descriptor:
+<context-param>
+<param-name>footerEmail</param-name>
+<param-value>joe@estates-r-us.biz</param-value>
+</context-param>
+Which EL code snippet will insert this context parameter into the footer?
+<a href='mailto:${footerEmail}'>Contact me</a>
+<a href='mailto:${initParam@footerEmail}'>Contact me</a>
+<a href='mailto:${initParam.footerEmail}'>Contact me</a>
+<a href='mailto:${contextParam@footerEmail}'>Contact me</a>
+<a href='mailto:${contextParam.footerEmail}'>Contact me</a>
+Answer: C
+ 
+21.  Select two optionto retrieve first value in request variable
+Answer: request.getParameter(“ …”);
+              Request.getParameterValues(“..”)[0];
+22.  How to access the variables fort in variable name using EL
+Answer: ${name[“fort”]}
+            ${name.fort}
+23.  Which header is header used to retrieve the info of ”User-agent”?
+Answer: response.getHeader(“User-Agent”); 
+ 
+                                                1) ${8/0}=infinity
+true or false
+2) EL expreesions used for?
+3)What is default scope of JSP:useBean or JSP:getproperty?
+4)Session timeout is in minutes and programmatically is in Seconds
+5)Request dispatchers object
+request,include,forward
+6)How to store java primitive types in session?
+7)<! x=4;>
+<% y=4;%>
+Solution is <%=x*y; %>

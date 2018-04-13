@@ -1,0 +1,252 @@
+1) Not present in Meta-tag
+
+   Options: http-equi, name, value, content
+2) Expression language is used to print something on the screen
+
+3) if(“ string “.trim()==”string”)
+s.o.p(“equal”);
+else 
+s.o.p(“not equal”);
+Ans: not equal
+
+4) override the init() method
+
+5)_jspservice
+
+6)lisenced : controller
+
+7) iterator has previous() method: false
+
+8)predefined values-: parameterization
+
+9)1000 users accessing SampleSevlet : 1 object wiil create
+
+10) <@ include file=”Header.html”>
+
+11) uncaught throwable object Exception
+
+12) Not mandatory ? Null pointerException
+
+13) what are thechecked exception ? ClasscastException, Interrrupted Exception
+
+14) parameterized value? prepared statement
+
+15)Apply style to text or part of text ? span
+
+16) Divide page into two rows ? rows 50%50%
+
+17) Divide page into two halfs? rows 50%50%,cols 50%50%
+
+18) document.getElementByTagname(“p”)[0].innerText
+
+19) Code? display method display method 10 10
+
+20) select (2+3*4/2-5) from dual ? 3
+
+21) select count(*) from employee where sal >(select Avg(sal) from Employeee)
+
+22) create or replace proc_name (emp_name varchar2)as
+Declare 
+Cursor c1 is 
+Select * from Emp
+Where e_name=emp_name
+Begin
+For rec in c1 Loop
+d.o.p(rec.e_name………..)
+end Loop
+end
+
+23) do post-large amount of data
+
+24) user name will be passed to the servlet
+Get method
+
+25) attribute? adds behavior of the tag
+
+26)Jsp translated to servlet-> compiled->instantiated
+
+27) person don’t want to share the content ? WEB_INF
+
+28) valid variables-Javascript ? _num,num
+
+29) create session ? request.getsession()
+
+30)when a interface is implemented by class and the class is extended by another class,the second class should override all the method in the first class
+Ans? All the above
+
+31)Runnable r=new Runnable();
+Thread t=new thread(r)
+?	Complier error
+
+32) Hardware bench marking? true
+
+33) A. Applet server side application
+       B. Servlet client side
+ A and B false
+
+34) 3-tier architecture
+*Application server
+*Database server
+*Web server
+
+35) Real world volums? load testing
+
+36) rapidly varying users? spike testing
+
+37) wrapper class int,short,char in switch ? true
+
+38) transaction response time related to throughput in loadtesting ? true
+
+39) objectiutputstream deserializes the object which was previously serialized by objectoutputstream? true
+
+40)A. static selerializable
+     B. traniciant can not be serializable
+  A.false B.true
+
+41)collection ques
+* ordered set of elements with different data types
+
+42) i) PL/SQL declaration part, execution and exception.
+      II) PL/Sql block can be anonymous or named.
+      iii) PL/SQL block converted by PL/SQL engine and then it is put to client side or server side
+
+43)	 Array a = new ArrayList();
+	a.add(10);
+	a.add(23);
+	a.add(“abc”);
+	HashSet as = new HashSet();
+	as.add(“abc”);
+	as.add(23);
+	a.addAll(as);
+	a.removeAll(as);
+	System.out.println(a);
+Ans: [10]
+
+44. if(((i++)>12)&&(++i<15))
+      S.O.P(i);
+     Else
+     S.O.P(i);
+Ans:11
+
+45. Automatically create unique index for the primary key column
+
+46. Garbage collection cannot be forced.
+
+47. Not implemented by RequestDispatcher
+Ans:	redirect
+	Dispatch
+
+48.	1 = 32;
+	Char c = 65;
+	Char a = i+c;
+	S.o.p(a);
+Ans: a;
+
+
+
+1. Long l=50;
+Ans: Compile time error(type mismatch)
+
+2. Byte a=10;
+   Byte b=15;
+   sop(a+b);
+
+   Ans: 25
+
+3. int i=12,j=13,k=0;
+	k=++i-j--;
+	sop(i);
+	sop(j);
+	sop(k);
+
+    Ans: 13
+	 12
+	 0
+
+4. try
+  {
+  system.exit(0);
+  }
+   finally
+  {
+  sop("Hello");
+  } 
+
+Ans: NO output(finally will no execute)
+
+5.which are runtime(checked) exceptions?
+  (a).Null pointer exception
+  (b).Array indec out of bound exception
+  (c).File not found exception
+  (d).sql exception
+  (e).I/O exception
+
+Ans:a,b
+
+6. Enumeration is having remove method(t/f)?
+
+Ans: False
+
+7.class parent
+  {
+    protected void disp()
+    {
+    sop("Parent class");
+    }
+    void base()
+    {
+     sop("Hello");
+     disp();
+    }
+  }
+  class child extends parent
+  {
+    protected void disp()
+    {
+    sop("Child class");
+    }
+ psvmain()
+  {
+  child c=new child();
+  c.base();
+  }
+  }
+
+  Ans:Hello
+    Child class
+
+8. public interface abc
+   {
+    /*code*/ int a=10;
+   } 
+
+   Ans: public, final, and static 
+
+9. public static void main(String[] args)
+    {
+        String str =
+            "India is a/n developing country.";
+
+        StringTokenizer strTok =
+            new StringTokenizer(str);
+
+        System.out.println(strTok.countTokens());
+    }
+
+  Ans: 5
+
+    
+10. Which one of the following lines produces error
+    <%! int a=10;%>Line-1
+    <% int b=7;%>Line-2
+    <%=a*b;%>Line-3
+
+  Ans: Line-3
+
+11.which is more secure comparing get and post?
+
+  Ans: post
+
+12. sop(10+"20.392");  
+
+  Ans: 1020.392

@@ -1,0 +1,50 @@
+......................................................................................................
+attempt 2
+.......................................................................................................
+1.model1 seperates view and control:false
+2.el implicit objects and jsp implicit objects are same-false 
+3.credit card-post
+4.jsp expression is used to-print
+5.business tier components-Business deligates,Transfer objects,Session facade
+6.decouples-business delegate,business application
+7.singleton-creational design pattern
+8.xml,html-mvc
+9.for loop <inti;i<3;i++>-the value of i is,the value of i is,the value of i is 3. 
+10.init param can be accesed inside the servelet constructor-false
+11<%!..!>,<%@..@>-declaration syntax
+12 tag extension-.tag or .tagx-refer head fist java
+13structure of http request- get/uri/http/1.1
+14.jsp can be used stand alone
+15.not related to session-filter 
+16.<c:when>-for switching
+17.sendredirect()-after commit exception returned(refer when sendredirect() is used)
+18.Http-set of rules
+19. setattribute&get attribute-http sesssion,servlet context,servlet request
+20.el -scriptless,simple & powerful,
+21.GetParameterNames(String[])-enumeration.
+22.Singleton-creational.
+23.
+
+.............................................................................................................
+attempt1
+...........................................................................................................
+1.model1 used for large applications:false
+2.object of getwriter is printwriter
+3.structure of http request:Get/reports/sales/index.html HTTP/1.0
+4.Servlet can declare a constructor-true
+5.geniric servlet:override service() method
+httpservlet:override doget(),dopost() method.
+it contains default implemntation of service() that calls approximate doxxx() method
+6.servlets are pure solution to web request
+many application:servlet+jsp
+7.<servlet -mapping>tag used to specify URL
+8.trace
+9.c<if -test
+10.userdefined servelets extends-servlet
+11.complex multiple views  which pattern-composite delegate
+12.transfer object advantages
+13.servelet a one application.servelet b another application.request is sent.
+14.questions on model view con
+15.which acts as a controller-servlet
+
+

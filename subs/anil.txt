@@ -1,0 +1,162 @@
+1.In javaScript, for accessing first paragraph tag in the document which of
+ the statement is used?
+a)document.getElementsByTagName('p')[0]
+b)None of the listed options
+c)document.getElementsBy TagName("p")
+d)document.getElementsBy TagName("p[0]")
+
+Answer: A
+
+2.Choose a valid package name in Java
+a)123pack
+b)outerpack_innerpack
+c)com.sun.eng
+d)pack123
+
+Answer: B,C,D
+
+3.Which object of JSP holds reference to javax.servlet.http.HttpSession object?
+a)response
+b)PageContext
+c)request
+d)session
+
+Answer: D
+  4.What does the following listing denote?
+<configuration>
+  <system.web>
+    <pages theme="website"/>
+   </system.web>
+</configuration>
+a)Registring a Skin in web.config
+b)Registring a theme in web.config
+c)Registring a MasterPage in web.config
+d)Registring a Stylesheet Theme in web.config
+
+Answer: B
+
+5. <%! int a=6; %>
+        <% int a=5; %>
+         <% int b=3; %>
+    Result is <%= a*b %>
+What is the result of the above code segnment?
+a)will display 15
+b)None of the listed options
+c)Compilation error
+d)will display 18
+
+Answer: A
+
+6.Identify the code snippet
+DECLARE
+var_num1 number:=50;
+var_num2 number;
+BEGIN
+var_num2:=200;
+DECLARE
+var_mult number;
+var_num1 number:=100; --LINE 1
+BEGIN
+var_mult:=var_num1*var_num2;
+END;
+dbms_output.put_line(var_num1);
+END;
+/
+  what will be the output of the above code assume serveroutput is on 
+
+select one:
+a)Compilation fails
+b)Compilation fails due to error on line 1
+c)Runs without any output
+d)Compiles, executes and prints 100
+e)Compiles, executes and prints 50
+
+Answer: A
+
+
+
+14.Which of the following Statements are correct?
+
+select one or more:
+a.Pass by reference eliminates the overhead of copying large data items.
+b.An argument passed to a ref parameter need not be initialized first.
+c.Variable passed as out rguments need not be initialized prior to being passed.
+d.Argument that uses params keyword must be the last argument of variable argument list of a method.
+
+(ANS: a,d)
+
+
+15.Which of the following  keywords ensures that a method cannot be overriden?
+
+select one:
+a.static
+b.final
+c.abstract
+d.protected
+
+(ANS:b)
+
+16.How will you access a servlet context inititalization parameter named "company-name"?
+
+select one:
+
+a.${initParam["company-name]}
+b.${init.company-name}
+c.${contextParam.company-name}
+d.${init['company-name']}
+
+ANS:c
+
+17.Which of the following are true about protected access specifier
+
+select one:
+a.All members of abstract class by default protected.
+b.Protected is default access modifier of a child class.
+c.A class can be declared as protected.
+d.If one class is having protected method then the method is available for sub class
+    which is present in another package.
+
+Ans:d
+
+18.Given a Filter class definition with  this method:
+        21.public void doFilter(ServletRequest request,
+        22.ServletResponse response,
+        23.FilterChain chain)
+        24.throws ServletException,IOException{
+        25.//insert code here
+        26.}
+Which code line should you insert at line 25 to properly invoke the next
+filter in the chain,or the target servlet if
+there are no more filters?
+select one:
+a.request.doFilter(request,response);
+b.chain.doFilter(requset,response);
+c.requset.forward(request,response);
+d.chain.forward(request,response);
+
+Ans: b
+
+19.you being a software developer needs to develop a web application for your organization.
+    You decided to use servlets to create the web application.While you are creating the servlet
+    you feel the need to write the code for the initialization of the servlet.This is needed to initialize the
+    servlet with the required data after that the servlet instance has been created.
+   How will you perform this task?
+
+select one:
+a.By overriding the doGet method in the servlet class.
+b.By overrriding the destroy method in the servlet class.
+c.By overriding the srvice method in the servlet class.
+d.By overriding the init method in the servlet class.
+
+ANS: d
+
+20.Consider you are developing a jdbc application,where you have to retrieve Employee table schema information
+like table columns name,columns field length and data type etc.Which API you will use to retrieve table schema information?
+
+select one:
+a.statement
+b.Data source
+c.ResultSetMetaData
+d.ResultSet
+
+ans:c 

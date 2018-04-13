@@ -1,0 +1,135 @@
+
+Q-1)
+                      
+                      import javax.servlet.http.*;
+                      public class SessionListener implements HttpSessionListener
+                       {
+line1--                   public void sessionCreated() {            
+                          System.out.println(" Session Created: ");
+                           }
+line 2--              public void sessionDestroyed() {
+                         System.out.println(" Session Destroyed:");
+                            }
+                    }
+
+which one in wrong(check box):
+(1) line one :method does not contain correct argument
+(2) line two: method does not contain correct argument
+(3) import statement doesnot implement HttpSessionListener interface
+(4) all method of HttpSessionListener should not implement in this code
+
+ANS:
+according to me option 1 and 2 both wrong
+because correct syntex is:
+public class SessionListener implements HttpSessionListener
+{
+  public void sessionCreated(HttpSessionEvent event) {
+    System.out.println(" Session Created: ");
+  }
+  public void sessionDestroyed(HttpSessionEvent event) {
+     System.out.println(" Session Destroyed:");
+  }
+}
+
+(Q-2)
+<%@page contentType="text/html" %>
+<html>
+<body>
+<%! int a=6;%>     //line--4
+<% int b=8;%>      //line--5
+result <%=a*b;%>   //line--6
+</body>
+</html>
+
+options:
+(1)line 4 is not correct syntex
+(2)line 5 is not correct syntex
+(3)code compile sucessfully and display 48
+(4)line 6 is not correct syntex
+
+Answer----4
+
+(Q--3)
+purpose of JSP Expression:
+
+ options:
+
+(1)Declare variables;
+(2)write block of java code
+(3)print something on screen
+(4)import java class and other jsp file ,html page
+
+Answer:
+3
+
+(Q--4)
+which one is correct:
+(1)you can override init() method to set on init param
+(2)you can override init() method to clean up database connection
+(3)you can override init() method to fetch init param & execute initial code
+(4)you can override init() method but you should not do
+
+Answer:---3
+
+(Q--5)import attribute of page directive use :
+(1)to import other jsp page and other html file
+(2)to import java class & package
+(3)to import taglib and other custom tag
+(4)any one of the above 
+
+Answer:2(but not confirm;;;;)
+             --Pankaj please confirm it
+
+(Q--6)
+you are employee of ABC company & your client has dissabled cookie what u will do:
+(1)you will use URL rewriting 
+(2)you ignore and leave on container to decide it(container take care it)
+(3)you enable session tracking management for JSP pages if the client has disabled cookies
+(4)---
+
+Answer :1
+
+(Q--7) which of the following method is over- ridden
+(1)JSPInit()
+(2)JSPDestroy()
+(3)_JSPService()
+(4) none of these
+
+Answer: 1 & 2 but radio button was given so i am confuse , please confirm it
+
+(Q--8) Which of the following correctly defines JSP technology ? 
+
+(1) JSP page is a text-based document that describes how to process a request to create a response.  
+(2) JSP page is a text-based document that describes how to process a to response create a request.  
+(3) JSP page is a xml-based document that describes how to process a request to create a response.  
+(4) JSP page is a xml-based document that describes how to process a to response create a request.
+
+Answer:I am confused in option 1 & 2 plz check it
+
+(Q--9)
+Your web application requires the ability to load and remove web files
+Which two HTTP methods are used to perform these actions? (Choose two.)
+1. PUT
+2. POST
+3. DELETE
+4. REMOVE
+5. DESTROY
+
+answer---1 & 3
+
+(q--10) question on jsp tag <jsp:setProperty > set bean with bean name is employeeName & bean value is 10
+        which is employeeId in int
+        Select Two:
+(1) <jsp:setproperty name="employeeName " property="*"/> 
+(2) <jsp:setbean name="employeeName " property="employeeid" value =10/>
+(3) <%beanobject.setEmployeeId(int id);%>
+(4) <%beanobject.setEmployeeId(String id);%>
+
+answer ---2 & 3
+
+while other questions are from previous question bank
+
+All the best my dear friends....
+these questions are enough for exams
+
+
