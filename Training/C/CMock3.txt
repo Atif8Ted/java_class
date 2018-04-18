@@ -1,0 +1,60 @@
+1)Write a program to find the sum of the factorials of the first n numbers in the Fibonacci series.
+Fibonacci series is given by 0 1 1 2 3 5 8……
+The function accepts n as argument and returns the sum.If n is negative print Invalid input.
+Sample input:
+5
+Output:
+11
+
+Use the code template:
+#include<stdio.h>
+int findSumFibanocci(int n);
+int main()
+{
+int n;
+scanf("%d",&n);
+
+//write code here
+
+
+printf("%d",findSum(n));
+return 0;
+}
+
+int findSum(int n)
+{
+//write code here
+
+}
+
+2)Write a program which can find the sum of the first n armstrong numbers.The function accepts n as argument and returns the sum.If n is negative, print Invalid input. 
+Sample Input
+5
+Output:
+1
+2
+3
+4
+5
+Output
+15
+Use the code template:
+#include<stdio.h>
+int findSumArmStrong(int n);
+int main()
+{
+int n;
+scanf("%d",&n);
+
+//write code here
+
+
+printf("%d",findSumArmStrong(n));
+return 0;
+}
+
+int findSumArmStrong(int n)
+{
+//write code here
+
+}

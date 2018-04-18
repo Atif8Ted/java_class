@@ -1,0 +1,266 @@
+1)Write a program to read an integer array and remove all 10s from the array, shift the other elements towards left and fill the trailing empty positions by 0 and return as a list. The method accepts the number of elements and an integer array. The return type is a list of integers.
+ 
+Input and Output Format:
+Input consists of n+1 integers, where n corresponds to size of the array followed by n elements of the array.
+Refer sample output for formatting specifications.
+ 
+Sample Input :
+5
+1
+10
+20
+10
+2
+Sample Output :
+1
+20
+2
+0
+0
+
+Main.java
+---------
+import java.util.Scanner;
+import java.util.List;
+import java.util.ArrayList;
+public class Main
+{
+public static void main(String args[])
+{
+int n,i;
+int input[];
+List<Integer> result=new ArrayList<Integer>();
+Scanner sc=new Scanner(System.in);
+n=sc.nextInt();
+input=new int[n];
+for(i=0;i<n;i++)
+{
+input[i]=sc.nextInt();
+}
+result=UserMainCode.removeTens(input,n);
+for(Integer obj:result)
+{
+System.out.println(obj);
+}
+}
+}
+
+UserMainCode.java
+-----------------
+import java.util.List;
+import java.util.ArrayList;
+public class UserMainCode
+{
+public static List<Integer> removeTens (int input[],int n)
+{
+
+
+}
+}
+
+2)Write a program that performs the following actions:
+1.Read m strings as input (fruit names) and store in first arraylist.Read n strings as input (fruit names) and store in second arraylist.The method accepts two arraylists as input,
+removes all fruits whose name ends with 'a' or 'e' from first arrayList and remove all fruits whose name begins  with 'm' or 'a' from second arrayList then combine the two lists and return the final output as a list. If the list is empty the program will print as “No fruit found”
+
+Input and Output Format:
+
+Input consists of an integer (m) denoting the size of first arraylist. The next m elements would be the values of the first arraylist. The next input would be n denoting the size of the second arraylist. The next n elements would be the values of the second arraylist.
+
+
+Sample Input 1:
+3
+Apple
+Cherry
+Grapes
+4
+Orange
+Mango
+Melon
+Apple
+Sample Output 1:
+Cherry
+Grapes
+Orange
+
+Main.java
+---------
+import java.util.Scanner;
+import java.util.List;
+import java.util.ArrayList;
+public class Main
+{
+public static void main(String args[])
+{
+int m,n,i;
+String str;
+List<String> flist=new ArrayList<String>();
+List<String> slist=new ArrayList<String>();
+List<String> reslist=new ArrayList<String>();
+Scanner sc=new Scanner(System.in);
+m=sc.nextInt();
+
+for(i=1;i<=m;i++)
+{
+str=sc.next();
+flist.add(str);
+}
+
+n=sc.nextInt();
+
+for(i=1;i<=n;i++)
+{
+str=sc.next();
+slist.add(str);
+}
+
+reslist=UserMainCode.fruitSelector(flist,slist);
+
+
+for(String obj:reslist)
+{
+System.out.println(obj);
+}
+}
+}
+
+UserMainCode.java
+-----------------
+import java.util.List;
+import java.util.ArrayList;
+public class UserMainCode
+{
+public static List<String> fruitSelector (List<String> flist,List<String> slist)
+{
+
+
+}
+}
+
+3) Create a method that can accept an list of String and sort in alphabetical order. The elements in the first half should be completely in uppercase and the elements in second half should be completely in lower case. Return the result list. 
+Note: If there are odd number of String objects, then (n/2)+1 elements should be in UPPPERCASE. 
+
+Sample Input 1:
+6
+Cherry
+Grapes
+Apple
+Orange
+Mango
+Melon
+
+Sample Output 1:
+CHERRY
+GRAPES
+APPLE
+orange
+mango
+melon
+
+Sample Input 2:
+5
+Cherry
+Grapes
+Apple
+Orange
+Mango
+
+Sample Output 2:
+CHERRY
+GRAPES
+APPLE
+orange
+mango
+melon
+
+Main.java
+---------
+import java.util.Scanner;
+import java.util.List;
+import java.util.ArrayList;
+public class Main
+{
+public static void main(String args[])
+{
+int n,i;
+String str;
+List<String> list=new ArrayList<String>();
+List<String> reslist=new ArrayList<String>();
+Scanner sc=new Scanner(System.in);
+n=sc.nextInt();
+
+for(i=1;i<=n;i++)
+{
+str=sc.next();
+list.add(str);
+}
+
+reslist=UserMainCode.getModifiedList(list);
+for(String obj:reslist)
+{
+System.out.println(obj);
+}
+}
+}
+
+UserMainCode.java
+-----------------
+import java.util.List;
+import java.util.ArrayList;
+public class UserMainCode
+{
+public static List<String> getModifiedList (List<String> list)
+{
+
+
+}
+}
+
+4) Write a Program which removes duplicate characters from the string. Your program should read a sentence (string) as input from user and return a string removing duplicate characters. Retain the first occurance of the duplicate character. Assume the characters are case – sensitive.The method accepts a string and returns the modified sentence as string. Use Java API only.
+
+Input and Output Format:
+Input consists of a string with maximum size of 100 characters.
+Output consists of a single string.
+Refer sample output for formatting specifications.
+
+Sample Input 1:
+hi this is sample test
+Sample Output 1:
+hi tsample
+
+Sample Input 2:
+AaBC DEFd
+
+Sample Output 2:
+AaBC DEFd
+
+Main.java
+---------
+import java.util.Scanner;
+public class Main
+{
+public static void main(String args[])
+{
+int n,i;
+String input;
+
+Scanner sc=new Scanner(System.in);
+n=sc.nextLine();
+
+System.out.println(UserMainCode.removeDuplicates(input));
+
+}
+}
+
+UserMainCode.java
+-----------------
+import java.util.List;
+public class UserMainCode
+{
+public static String removeDuplicates (String str)
+{
+
+
+}
+}
+
+

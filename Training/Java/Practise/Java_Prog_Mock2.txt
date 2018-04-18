@@ -1,0 +1,148 @@
+1)Create a method that accepts a string and count the number of times each character is present in the array. Add how many times each character is present to a hash map with the character as key and the repetitions count as value. Count the number of times each character appears in the array. Add the details into a hash map with character as key and count as value.
+
+Sample input:
+APPLE
+Output: Will be hashmap with the following contents{‘A’:1,’P’:2,’L’:1,’E’:1}
+Main.java
+---------
+import java.util.Scanner;
+import java.util.HashMap;
+public class Main
+{
+public static void main(String args[])
+{
+HashMap<Character,Integer> result=new HashMap<Character,Integer>();
+String input="";
+Scanner sc=new Scanner(System.in);
+input=sc.nextLine();
+hmap=UserMainCode.countCharacter(input);
+for(Character cr:hmap.keySet())
+{
+System.out.println(str + ":"+hmap.get(str));
+}
+}
+}
+
+UserMainCode.java
+-----------------
+import java.util.HashMap;
+public class UserMainCode
+{
+public HashMap<String,String> countCharacter(String str)
+{
+
+
+}
+}
+
+2) Write a program that performs the following actions:
+    Read n strings as input.
+    Create an arraylist to store the above n strings in this arraylist. 
+Write a function convertToStringArray which accepts the arraylist as input.The function should sort the elements (strings) present in the arraylist and convert them into a string array. 
+Return the array.
+ 
+
+Input and Output Format:
+
+Input consists of n+1 integers. The first integer denotes the size of the arraylist, the next n strings are values to the arraylist.
+Output consists of an arrayas per step 4.
+Refer sample output for formatting specifications.
+
+Sample Input 1:
+4
+delhi
+pune
+chennai
+kolkatta
+Sample Output 1:
+chennai
+delhi
+kolkatta
+pune
+Main.java
+---------
+import java.util.Scanner;
+import java.util.List;
+import java.utl.ArrayList;
+public class Main
+{
+public static void main(String args[])
+{
+List<String> alist=new ArrayList<String>();
+int n;
+String input="";
+String res[]=null;
+Scanner sc=new Scanner(System.in);
+n=sc.nextInt();
+for(int i=1;i<=n;i++)
+{
+input=sc.nextLine();
+list.add(input);
+}
+res=UserMainCode.convertToStringArray(alist);
+for(String str:res)
+{
+System.out.println(str);
+}
+}
+}
+
+UserMainCode.java
+-----------------
+import java.util.ArrayList;
+public class UserMainCode
+{
+public String[] convertToStringArray(ArrayList<String< alist)
+{
+
+
+
+}
+}
+3)Given a date as a string input in the format dd-mm-yy, write a program to extract the month and to print the month name in upper case.
+ 
+
+ 
+Create a class Main which would get the String as input and call the static method getMonthName present in the UserMainCode.The month names are {JANUARY, FEBRUARY, MARCH, APRIL, MAY, JUNE, JULY, AUGUST, SEPTEMBER, OCTOBER, NOVEMBER, DECEMBER}
+ 
+Input consists of a String.
+Output consists of a String.
+ 
+Sample Input:
+01-06-82
+ 
+Sample Output:
+JUNE
+
+Main.java
+---------
+import java.util.Scanner;
+import java.util.Date;
+
+public class Main
+{
+public static void main(String args[])
+{
+
+String input="";
+
+Scanner sc=new Scanner(System.in);
+input=sc.next();
+
+System.out.println(UserMainCode.getMonthName (alist));
+
+}
+}
+
+UserMainCode.java
+-----------------
+import java.util.ArrayList;
+public class UserMainCode
+{
+public String getMonthName(String str)
+{
+
+
+
+}
+}

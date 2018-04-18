@@ -1,0 +1,69 @@
+Consider two Arrays .First array contains the product code and product category code as key and value respectively. Second array contains the product code and price. Write a c function which accepts the two arrays , price hike rate and the product category code and updates the prices of the product in the entered category by the hike rate. If array size is odd or negative,or if any array element is negative,print Invalid input.
+For example,
+Sample input:
+10
+Array1:{1,101,2,102,3,101,4,103,5,103}
+Array2 2:{1,1000,2,500,3,2000,4,100,5,600}
+Input3:200
+Input4:103
+Output1:{1,1000,2,500,3,2000,4,300,5,800}
+
+
+Use the code template:
+#include<stdio.h>
+int output1[20];
+int output2;
+void updatePrice(int a[],int b[],int n,int rate,int code);
+int main()
+{
+int a[10],b[10],n,i,rate,code;
+scanf("%d",&n);
+
+//write code here
+
+for(i=0;i<n;i++)
+{
+scanf("%d",&a[i]);
+//write code here
+}
+
+for(i=0;i<n;i++)
+{
+//write code here
+scanf("%d",&b[i]);
+}
+scanf("%d",&rate);
+scanf("%d",&code);
+updatePrice(a,b,n,rate,code);
+for(i=0;i<output2;i++)
+{
+printf("%d",output1[i]);
+}
+return 0;
+}
+
+
+
+void updatePrice(int a[],int b[],int n,int rate,int code)
+{
+
+//write code here
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

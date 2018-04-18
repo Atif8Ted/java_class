@@ -1,0 +1,136 @@
+1)Write a program to find the sum of square of numbers in the prime indices. The function takes array size and array as arguments and returns the sum. If array size is negative or any of the array element is negative,print invalid input.
+sample Input
+7
+1
+2
+4
+5
+8
+3
+10
+Output
+50
+Use the code template:
+#include<stdio.h>
+int findSum(int a[],int n);
+int main()
+{
+int a[10],n,i;
+scanf("%d",&n);
+
+//write code here
+
+for(i=0;i<n;i++)
+{
+scanf("%d",&a[i]);
+//write code here
+}
+
+printf("%d",findSum(a,n));
+return 0;
+}
+
+int findSum(int a[],int n)
+{
+//write code here
+
+}
+
+2) Create a method which accepts an array of numbers and stores the numbers and their squares as key and value respectively in the output array.The function takes array and array size as arguments.If array size is negative or any of the array element is negative,print invalid input.
+Sample Input
+5
+1
+2
+3
+4
+5
+Output
+1
+1
+2
+4
+3
+9
+4
+16
+5
+25
+Use the code template:
+#include<stdio.h>
+int output1[50];
+int output2;
+void findSquares(int a[],int n);
+int main()
+{
+int a[10],n,i;
+scanf("%d",&n);
+
+//write code here
+
+for(i=0;i<n;i++)
+{
+scanf("%d",&a[i]);
+//write code here
+}
+
+findSquares(a,n);
+for(i=0;i<output2;i++)
+{
+printf("%d ",output1[i]);
+}
+return 0;
+}
+
+void findSquares(int a[],int n)
+{
+//write code here
+
+}
+
+3)Write a program which accepts an integer array, reverse the numbers in the array and returns the resulting array in ascending order.If array size is negative or any of the array element is negative,print invalid input.
+
+Sample Input
+5
+25 
+34 
+13 
+78
+12
+Output
+21
+31
+43
+52
+87
+
+Use the code template:
+#include<stdio.h>
+int output1[50];
+int output2;
+void reverseAndSort(int a[],int n);
+int main()
+{
+int a[10],n,i;
+scanf("%d",&n);
+
+//write code here
+
+for(i=0;i<n;i++)
+{
+scanf("%d",&a[i]);
+//write code here
+}
+
+reverseAndSort(a,n);
+for(i=0;i<output2;i++)
+{
+printf("%d ",output1[i]);
+}
+return 0;
+}
+
+void reverseAndSort(int a[],int n)
+{
+//write code here
+
+}

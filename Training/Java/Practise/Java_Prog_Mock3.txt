@@ -1,0 +1,240 @@
+1)A Company wants to give away bonus to its employees. You have been assigned as the programmer to automate this process. You would like to showcase your skills by creating a quick prototype. The prototype consists of the following steps:
+1.	Read Employee details from the User. The details would include id, DOB (date of birth) and salary in the given order. The datatype for id is integer, DOB is string and salary is integer.
+2.	You decide to build two hashmaps. The first hashmap contains employee id as key and DOB as value, and the second hashmap contains same employee ids as key and salary as value.
+3.	If the age of the employee in the range of 25 to 30 years (inclusive), the employee should get bonus of 20% of his salary and in the range of 31 to 60 years (inclusive) should get 30% of his salary. store the result in TreeMap in which Employee ID as key and revised salary as value. Assume the age is caculated based on the date 01-09-2014. (Typecast the bonus to integer).
+4.	Other Rules:
+a. If Salary is less than 5000 store -100.
+b. If the age is less than 25 or greater than 60 store -200.
+c. a takes more priority than b i.e both if a and b are true then store -100.
+5.	You decide to write a function calculateRevisedSalary which takes the above hashmaps as input and returns the treemap as output. Include this function in class UserMainCode.
+
+ 
+Create a Class Main which would be used to read employee details in step 1 and build the two hashmaps. Call the static method present in UserMainCode.
+Input and Output Format:
+Input consists of employee details. The first number indicates the size of the employees. The next three values indicate the employee id, employee DOB and employee salary. The Employee DOB format is “dd-MM-yyyy”
+Output consists of a single string.
+Refer sample output for formatting specifications.
+Sample Input 1:
+2
+1010
+20-12-1987
+10000
+2020
+01-01-1985
+14400
+
+ 
+Sample Output 1:
+1010
+12000
+2020
+17280
+Main.java
+---------
+import java.util.Scanner;
+import java.util.HashMap;
+import java.util.TreeMap;
+public class Main
+{
+public static void main(String args[])
+{
+int n;
+String id,dob;
+int salary;
+int key,value;
+HashMap<Integer,String> hmap1=new HashMap<Integer,String>();
+HashMap<Integer,Integer> hmap2=new HashMap<Integer,Integer>();
+TreeMap<Integer,Integer> tmap=new TreeMap<Integer,Integer>();
+Scanner sc=new Scanner(System.in);
+input=sc.nextInt();
+for(i=1;i<=n;i++)
+{
+id=sc.nextInt();
+dob=sc.next();
+salary=sc.nextInt();
+hmap1.put(id,dob);
+hmap2.put(id,salary);
+}
+
+tmap=UserMainCode.calculateRevisedSalary(hmap1,hmap2);
+Iterator<Integer> itr=tmap.keySet().iterator();
+while(itr.hasNext())
+{
+key=itr.next();
+System.out.println(key +":" +tmap.get(key));
+}
+
+}
+}
+
+UserMainCode.java
+-----------------
+import java.util.HashMap;
+public class UserMainCode
+{
+public static TreeMap<Integer,Integer> calculateRevisedSalary (HashMap<Integer,String> input1,HashMap<Integer,Integer> input2)
+{
+
+
+}
+}
+
+2)Given a String , write a program to find whether it is a valid password or not.
+ 
+Validation Rule:
+Atleast 8 characters
+Atleast 1 number(1,2,3...)
+Atleast 1 special character(@,#,%...)
+Atleast 1 alphabet(a,B...)
+ 
+The method accepts a String argument and returns a boolean value. The method returns true if the password is acceptable. Else the method returns false.
+ 
+Input and Output Format:
+Input consists of a String.
+Output consists of a String that is either “Valid” or “Invalid”.
+ 
+Sample Input 1:
+cts@1010
+ 
+Sample Output 1:
+Valid
+ 
+Sample Input 2:
+punitha3
+ 
+Sample Output 2:
+Invalid
+Main.java
+---------
+import java.util.Scanner;
+public class Main
+{
+public static void main(String args[])
+{
+String input;
+Scanner sc=new Scanner(System.in);
+input=sc.next();
+if(UserMainCode.validatePassword(input))
+System.out.println("Valid");
+else
+System.out.println("InValid");
+}
+}
+UserMainCode.java
+-----------------
+public class UserMainCode
+{
+public static boolean validatePassword(String str)
+{
+
+
+}
+}
+3)Write a program to read a string that contains a sentence  Find the word with the maximum number of vowels in the sentence.
+The method  which accepts a strings and returns the string with the maximum number of vowels.If more than one string has maximum count,return  all the strings as a list.
+
+Note: The check is case-sensitive.
+
+Input and Output Format:
+
+Output consists of count indicating the number of occurances.
+Refer sample output for formatting specifications.
+
+Sample Input 1:
+Java is best programming language in the world
+
+Sample Output 1:
+language
+
+Sample Input 2:
+object oriented programming 
+
+
+Sample Output 2:
+oriented
+programming
+
+Main.java
+---------
+import java.util.Scanner;
+import java.util.HashMap;
+public class Main
+{
+public static void main(String args[])
+{
+String input;
+ArrayList<String> alist=new ArrayList<String>();
+Scanner sc=new Scanner(System.in);
+input=sc.nextLine();
+alist=UserMainCode.maxVowelCount(input);
+for(String str:alist)
+{
+System.out.println(str);
+}
+}
+}
+UserMainCode.java
+-----------------
+import java.util.HashMap;
+public class UserMainCode
+{
+public static boolean maxVowelCount(String str)
+{
+
+
+}
+}
+4)Write a program that reads details about number of admissions per year of a particular college, return the year which had maximum admissions. The details are stored in an arraylist with the first index being year and next being admissions count.
+The method accepts a arraylist and returns an integer indicating the year of max admissions.
+
+Input and Output Format:
+Input consists of 2n+1 values. The first value corresponds to size of the data (year & admissions). The next n pair of numbers contains the year and admissions count.
+Output consists of an integer as mentioned in the problem statement.
+Refer sample output for formatting specifications.
+Sample Input 1:
+4
+2010
+200000
+2011
+300000
+2012
+45000
+2013
+25000
+Sample Output 1:
+2011
+Main.java
+---------
+import java.util.Scanner;
+import java.util.ArrayList;
+public class Main
+{
+public static void main(String args[])
+{
+int n,year,count;
+
+ArrayList<String> alist=new ArrayList<String>();
+Scanner sc=new Scanner(System.in);
+n=sc.nextInt();
+for(int i=1;i<=n;i++)
+{
+year=sc.nextInt();
+count=sc.nextInt();
+alist.add(year);
+alist.add(count);
+}
+System.out.println(UserMainCode.getYear(input));
+
+}
+}
+UserMainCode.java
+-----------------
+import java.util.HashMap;
+public class UserMainCode
+{
+public static int getYear(String str)
+{
+
+
+}
+}

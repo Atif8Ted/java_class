@@ -1,0 +1,155 @@
+
+
+
+Problem #1:
+
+Write a query to display gender and their count.  Give the count an alias name of Count.
+
+
+Problem #2:
+Write a query to display employee id, employee name who joined the company after 2005.
+
+
+
+
+Problem#3:
+Write a query to display employee id, employee name,designation and department for employees who never issued an item as a loan from the company.
+
+
+
+
+
+
+Problem # 4:
+ Write a query to count the number of employees in HR department. Give the alias name as Count.
+
+
+
+
+Problem # 5:
+Write a query to display category and number of items in that category. Give the count an alias name of Count.
+Display the details on the sorted order of count in descending order.
+
+
+
+Problem # 6:
+Write a query to display issue_id, employee_id, employee_name.
+
+
+
+
+
+Problem # 7:       
+Write a query to count the number of cards issued to an employee id E00001.  Give the count an alias name as Count.
+
+
+Problem # 8:
+Write a  query to count Furniture issued and Furniture which are not issued.
+
+
+
+Problem # 9:
+Write a count of customers who have gone for loan type stationary.
+
+
+
+Problem # 10:
+Write a query to display employee id , employee name who don’t have loan cards.
+
+
+
+
+Problem# 11:
+Write a query to count the items category wise within that make wise within that  description wise. Give the count an alias name of Count
+
+
+
+Problem # 12:
+Write a query to display issue id, employee id, employee name, item id, item description.  Display the data on sorted order of date. The latest year first but within that month should be in ascending order.
+
+
+
+
+
+Problem # 13:
+Write a query to display the employee id, employee name   and number of items issued to them. Give the count an alias name as Count. Display the details in descending order of count.
+
+
+Problem # 14:
+Write a query to display the employee id, employee name and total valuation of the product issued to each employee.  Give the alias name as TOTAL_VALUATION.
+
+
+Problem # 15:
+Write a query to display employee id , employee name , count of items who asked for more then 1 furniture. Give the alias name for count of items as COUNT_ITEMS.
+
+
+Problem # 16:
+Write a query to display the employee id, employee name who issue items in at least 2 different categories.
+Give the alias name for category count as COUNT_CATEGORY.
+
+
+
+
+Problem # 17:
+Write a query to display  employee id, employee name, item id , item name who issued the item in the month of January 2013.
+
+
+
+
+Problem # 18:
+Write a query to display the item id , item name which were never issued to any employee.
+Solution:
+
+
+
+
+Problem # 19:
+Write a query to display distinct employee id ,employee name who kept the item issued for more then a year.
+
+
+
+
+Problem # 20:  
+Display the employee id , employee name  who have never issued the item in the year 2013. Exclude those
+Records who never issued the items.
+
+
+Problem # 21:   
+Write a query to display the employee id, employee name, card issue date, card invalid date.
+Order by employee name. Give the alias name to display the invalid date as CARD_INVALIDATE.
+
+[Hint :  Validity in years for the loan card is given in  loan_card_master table. Invalid date is calculated by adding number of years in the loan card issue date. ]
+
+
+Problem #22:
+
+Write a query to display the employee id, employee name who was issued  an item of highest valuation.
+
+[Hint Suppose an item called dinning table is of 22000 and that is the highest price. So display the employee id and employee name who issued dinning table whose price is 22000.]
+
+
+
+Problem#23:
+
+Write a query to display the employee id, employee name and  for employee who has issued  maximum total valuation of the product.  Give the alias name for total valuation as TOTAL_VALUATION.
+
+[ Hint: Suppose an employee E00019 issued item of price 5000, 10000, 12000 and E00020 issue item of price 2000, 7000, 1000. So the valuation of items taken by E00019 is 27000 and for E00020 it is 10000. So the employee id , employee name  of E00019 should  displayed. ]
+
+
+
+Problem # 24:
+Write a query to display the employee id, employee name and  for employee who has issued  minimum  total valuation of the product.  Give the alias name for total valuation as TOTAL_VALUATION.
+
+[ Hint: Suppose an employee E00019 issued item of price 5000, 10000, 12000 and E00020 issue item of price 2000, 7000, 1000. So the valuation of items taken by E00019 is 27000 and for E00020 it is 10000. So the employee id , employee name  of E00020 should  be displayed. ]
+
+
+
+
+
+Problem # 25:   
+Write a query to display the employee id, employee name who was issued  an item of minimum valuation.
+
+[Hint Suppose an item called  pen  is of rupees 20 and that is the lowest price. So display the employee id and employee name who issued pen where the valuation is 20.]
+
+
+

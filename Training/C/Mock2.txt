@@ -1,0 +1,96 @@
+In a school there are some teachers who handle two subjects (Maths and English). When the feedback was taken their feedback was present in both Maths Feedback as well as English Feedback. Write a program to create a consolidated feedback for the teachers for English and Maths. For those taking both the subjects the highest feedback is taken. Input consists of 2 arrays.Input consists of size of the array,and two input arrays. Size of two input arrays are same. If array size is negative or any array element is negative,print Invalid input.
+First array - contains feedback in Maths
+key – Teachers's id
+value-Feedback in Maths
+
+Second array - contains feedback in English
+key – Teachers's id
+value-Feedback in English
+
+Output array -contains consolidated feedback
+key-Teacher's id
+value-If the teacher is handling one subject take the feedback. If the teacher is handling both the subjects, take the highest feedback.
+
+Sample Input
+8 -size of the array
+1
+95
+2
+98
+5
+87
+4
+88
+
+1
+98
+3
+97
+6
+97
+4
+98
+
+output array
+1
+98
+2
+98
+5
+87
+4
+98
+3
+97
+6
+97
+
+Use the code template:
+#include<stdio.h>
+int output1[20];
+int output2;
+void storeFeedBack(int a[],int b[],int n);
+int main()
+{
+int a[10],b[10],n,i;
+scanf("%d",&n);
+for(i=0;i<n;i++)
+{
+scanf("%d",&a[i]);
+}
+for(i=0;i<n;i++)
+{
+scanf("%d",&b[i]);
+}
+storeFeedBack(a,b,n);
+for(i=0;i<output2;i++)
+{
+printf("%d",output1[i]);
+}
+return 0;
+}
+
+void storeFeedBack(int a[],int b[],int n)
+{
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

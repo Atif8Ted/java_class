@@ -1,0 +1,200 @@
+1)Create a method which accepts a String and replaces all the consonants in the String with the next alphabet.If the input string has no consonants, return the same string.
+Note: Consonant refers to all alphabets excluding vowels
+Return the String replacing all the consonants with the next character.
+
+Sample Input 1:
+JAVA 
+Sample Output 1:
+KAWA
+
+Sample Input 2:
+aei
+Sample Output 2:
+aei
+
+
+Main.java
+---------
+import java.util.Scanner;
+public class Main
+{
+public static void main(String args[])
+{
+String input;
+Scanner sc=new Scanner(System.in);
+input=sc.nextLine();
+System.out.println(UserMainCode.replaceConsonants(input));
+}
+}
+
+UserMainCode.java
+-----------------
+public class UserMainCode
+{
+public String replaceConsonants(String str)
+{
+
+
+}
+}
+
+
+2)Create a method that accepts a number and modifies it such that the each of the digit in the newly formed number is equal to the difference between two consecutive digits in the original number. The digit in the units place can be left as it is.
+Note: Take the absolute value of the difference. Ex: 6-8 = 2
+
+Sample Input
+45862
+Sample Output
+13242
+
+Main.java
+---------
+import java.util.Scanner;
+public class Main
+{
+public static void main(String args[])
+{
+int input;
+Scanner sc=new Scanner(System.in);
+input=sc.nextInt();
+System.out.println(UserMainCode.formNumber(input));
+}
+}
+
+UserMainCode.java
+-----------------
+public class UserMainCode
+{
+public int formNumber(int num)
+{
+
+
+}
+}
+
+3)You are asked to create an application for registering the details of jobseeker. The requirement is:
+Username should always end with _job and there should be atleast minimum of 8 characters to the left of _job. Write a method to validate the same. Return true in case the validation is passed. In case of validation failure return false.
+
+Sample Input 1:
+adminuser_job
+Sample Output 1:
+Valid username
+
+Sample Input 2:
+admin_job
+Sample Output 2:
+Invalid username
+
+Main.java
+---------
+import java.util.Scanner;
+public class Main
+{
+public static void main(String args[])
+{
+String input;
+Scanner sc=new Scanner(System.in);
+input=sc.next();
+if(UserMainCode.validateUserName(input))
+{
+System.out.println("Valid username");
+}
+else
+{
+System.out.println("InValid username");
+}
+}
+}
+
+UserMainCode.java
+-----------------
+public class UserMainCode
+{
+public boolean validateUserName(int num)
+{
+
+
+}
+}
+
+4) Write code to get the sum of all the digits present in the given string. The method accepts string input.Return the sum as output. If there is no digit in the given string return -1 as output.
+ 
+Input and Output Format:
+Input consists of a string.
+Output is a single integer which is the sum of digits in a given string.
+Refer sample output for formatting specifications.
+ 
+Sample Input 1:
+good23bad4
+Sample Output 1:
+9
+
+Sample Input 2:
+good
+Sample Output 2:
+-1
+
+Main.java
+---------
+import java.util.Scanner;
+public class Main
+{
+public static void main(String args[])
+{
+String input;
+Scanner sc=new Scanner(System.in);
+input=sc.nextLine();
+System.out.println(UserMainCode.sumOfDigits(input));
+}
+}
+
+UserMainCode.java
+-----------------
+public class UserMainCode
+{
+public int sumOfDigits(String str)
+{
+
+
+}
+}
+
+5) Obtain two strings S1,S2 from user as input. Your program should form a string of  “long+short+long”, with the shorter string inside of the longer String. The method accepts two string variables. The return type is the string.
+
+Input and Output Format:
+Input consists of two strings with maximum size of 100 characters.
+Output consists of a string.
+
+Refer sample output for formatting specifications.
+Sample Input 1:
+Hello
+Hi
+Sample Output 1:
+HelloHiHello
+
+Main.java
+---------
+import java.util.Scanner;
+public class Main
+{
+public static void main(String args[])
+{
+String input1,input2;
+Scanner sc=new Scanner(System.in);
+input1=sc.next();
+input2=sc.next();
+System.out.println(UserMainCode.getCombo(input1,input2));
+}
+}
+
+UserMainCode.java
+-----------------
+public class UserMainCode
+{
+public String getCombo(String str1,String str2)
+{
+
+
+}
+}
+
